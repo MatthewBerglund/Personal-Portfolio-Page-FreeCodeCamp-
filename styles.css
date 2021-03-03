@@ -1,0 +1,88 @@
+html {
+    font-family: sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- HEADER/NAVBAR STYLES --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 15px;
+    background-color: #b97628;
+}
+
+.navbar-img {
+    width: 45px;
+}
+
+.nav-link-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+/* --- WELCOME SECTION STYLES --- */
+.welcome-section {
+    height: 100vh;
+    /* max-width:  */
+    background-color: #fbfaf5;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/04/Design_for_the_Summer_Smoking_Room_at_Cardiff_Castle.jpg");
+    background-repeat: no-repeat;
+    background-position: top 30px center;
+    background-size: contain;
+    margin-top: 61px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.welcome-text {
+    width: 100%;
+    max-width: 507px;
+    text-align: center;
+    background-color: #0000003f;
+    padding: 10px 15px;
+    margin: 0 auto;
+}
+
+.welcome-heading {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.welcome-description {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.projects-section {
+    background-color: rgba(0, 128, 0, 0.158);
+}
+
+.contact-section {
+    background-color: rgba(255, 166, 0, 0.192);
+}
