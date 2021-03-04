@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Macondo+Swash+Caps&family=Open+Sans&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Personal Portfolio Page</title>
 </head>
@@ -12,7 +16,9 @@
 <body>
     <header>
         <nav id="navbar" class="navbar">
-            <img src="/assets/owl.svg" class="navbar-img" alt="owl-logo"></img>
+            <div class="logo-bar">
+                <img src="/assets/owl_orange.svg" class="navbar-img" alt="owl-logo"></img>
+            </div>
             <div class="nav-link-container">
                 <a class="nav-link" href="#welcome-section">About</a>
                 <a class="nav-link" href="#projects">Work</a>
@@ -23,22 +29,44 @@
     <main>
         <section id="welcome-section" class="welcome-section">
             <div class="welcome-text">
-                <h1 class="welcome-heading">MATTHEW BERGLUND</h1>
-                <p class="welcome-description">WEB DEVELOPER</p>
+                <h1 class="welcome-heading">WEB DEVELOPER</h1>
             </div>
         </section>
         <section id="projects" class="projects-section">
-            <h2>Work</h2>
-            <div class="project-tile"></div>
-            <div class="project-tile"></div>
-            <div class="project-tile"></div>
-            <div class="project-tile"></div>
-            <a href="https://codepen.io/matthewberglund">Visit my codepen page</a>
+            <h2>Things I've made</h2>
+            <div class="project-tiles">
+
+                <figure class="project-tile">
+                    <a class="project-tile-link" href="">
+                        <img class="project-tile-img" src="/assets/tribute.png" alt="">
+                        <figcaption class="project-tile-cap">Tribute Page</figcaption>
+                    </a>
+                </figure>
+                <figure class="project-tile">
+                    <a class="project-tile-link" href="">
+                        <img class="project-tile-img" src="/assets/survey.png" alt="">
+                        <figcaption class="project-tile-cap">Survey Form Page</figcaption>
+                    </a>
+                </figure>
+                <figure class="project-tile">
+                    <a class="project-tile-link" href="">
+                        <img class="project-tile-img" src="/assets/product.png" alt="">
+                        <figcaption class="project-tile-cap">Product Landing Page</figcaption>
+                    </a>
+                </figure>
+                <figure class="project-tile">
+                    <a class="project-tile-link" href="">
+                        <img class="project-tile-img" src="/assets/documentation.png" alt="">
+                        <figcaption class="project-tile-cap">Technical Documentation Page</figcaption>
+                    </a>
+                </figure>
+            </div>
+            <a class="work-link" href="https://codepen.io/matthewberglund">Visit my codepen page</a>
         </section>
         <section id="get-in-touch" class="contact-section">
             <h2>Get in touch with me</h2>
-            <a href="" id="profile-link">GitHub</a>
-            <a href="">FreeCodeCamp</a>
+            <a class="contact-link" href="" id="profile-link">GitHub</a>
+            <a class="contact-link" href="">FreeCodeCamp</a>
         </section>
     </main>
     <footer></footer>

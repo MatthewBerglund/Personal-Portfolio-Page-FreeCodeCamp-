@@ -1,5 +1,5 @@
 html {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -9,6 +9,14 @@ html {
     box-sizing: border-box;
 }
 
+h2 {
+    font-weight: 100;
+    /* text-transform: uppercase; */
+    /* background: linear-gradient(to right, rgba(0,0,0,0), rgba(0, 0, 0, 0.473), rgba(0,0,0,0)); */
+    text-align: center;
+    letter-spacing: 2px;
+}
+
 /* --- HEADER/NAVBAR STYLES --- */
 .navbar {
     position: fixed;
@@ -16,41 +24,54 @@ html {
     left: 0;
     right: 0;
     width: 100%;
-    height: 50px;
-    border-bottom: 1px solid rgb(201, 201, 201);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 30px 15px;
-    background-color: #b97628;
+}
+
+.logo-bar {
+    width: 100%;
+    height: 80px;
+    background-color: #48b089;
+    padding: 15px;
+    display: flex;
 }
 
 .navbar-img {
-    width: 45px;
+    width: 65px;
+    /* border: 1px solid red; */
 }
 
 .nav-link-container {
-    width: 70%;
+    width: 100%;
+    height: 40px;
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: flex-end;
+    align-items: stretch;
+    background-color: #16232d;
 }
 
 .nav-link {
     text-decoration: none;
     color: white;
+    /* border: 1px solid red; */
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/75/Anselm_Feuerbach_-_Das_Gastmahl._Nach_Platon_%28zweite_Fassung%29_-_Google_Art_Project.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* --- WELCOME SECTION STYLES --- */
 .welcome-section {
     height: 100vh;
-    /* max-width:  */
-    background-color: #fbfaf5;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/04/Design_for_the_Summer_Smoking_Room_at_Cardiff_Castle.jpg");
-    background-repeat: no-repeat;
-    background-position: top 30px center;
-    background-size: contain;
-    margin-top: 61px;
+    margin-top: 60px;
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -61,28 +82,67 @@ html {
     width: 100%;
     max-width: 507px;
     text-align: center;
-    background-color: #0000003f;
     padding: 10px 15px;
     margin: 0 auto;
 }
 
 .welcome-heading {
     color: white;
-    font-size: 20px;
-    letter-spacing: 1px;
-}
-
-.welcome-description {
-    color: white;
     font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-family: 'Italiana', serif;
+    font-family: 'Macondo Swash Caps', cursive;
 }
 
+/* --- PROJECTS SECTION STYLES --- */
 .projects-section {
-    background-color: rgba(0, 128, 0, 0.158);
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.158); */
+    /* border: 1px solid white; */
+    padding: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    /* margin-top: 173px; */
 }
 
+.project-tiles {
+    width: 100%;
+}
+
+.project-tile {
+    width: 345px;
+    height: auto;
+    /* border: 1px solid red; */
+    background-color: #16232db4;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.project-tile-img {
+    width: auto;
+    height: 350px;
+    /* margin-top: 10px; */
+}
+
+.project-tile-cap {
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.project-tile-link {
+    color: white;
+    text-decoration: none;
+}
+
+.work-link {
+    text-decoration: none;
+    color: white;
+}
+
+/* --- CONTACT SECTION STYLES --- */
 .contact-section {
-    background-color: rgba(255, 166, 0, 0.192);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.158);
+    height: 300px;
 }
