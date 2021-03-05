@@ -240,6 +240,10 @@ footer {
     .project-tiles {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
+    }
+
+    .project-tile {
+        margin: 30px;
     }
 }
