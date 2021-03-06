@@ -232,7 +232,7 @@ footer {
     text-decoration: underline;
 }
 
-
+/* --- STYLES FOR SCREENS WIDER THAN 768px --- */
 @media all and (min-width: 769px) {
     
     /* --- WELCOME SECTION STYLES --- */
