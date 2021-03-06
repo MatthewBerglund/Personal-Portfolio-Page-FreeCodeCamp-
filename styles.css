@@ -2,7 +2,6 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -10,55 +9,54 @@ html {
 }
 
 h2 {
-    font-weight: 100;
     font-family: 'Macondo Swash Caps', cursive;
-    text-align: center;
+    font-weight: 100;
     letter-spacing: 2px;
+    text-align: center;
+    background: linear-gradient(to right, rgba(0,0,0,0), rgba(0, 0, 0, 0.5), rgba(0,0,0,0));
+    padding: 5px 0;
     border-top: 3.5px double rgba(255, 255, 255, 0.486);
     border-bottom: 3.5px double rgba(255, 255, 255, 0.486);
-    padding: 5px 0;
-    background: linear-gradient(to right, rgba(0,0,0,0), rgba(0, 0, 0, 0.5), rgba(0,0,0,0));
 }
 
 /* --- HEADER/NAVBAR STYLES --- */
 .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .logo-bar {
+    display: flex;
     width: 100%;
     height: 80px;
     background-color: #48b089;
     padding: 15px;
-    display: flex;
 }
 
 .navbar-img {
     width: 65px;
-    /* border: 1px solid red; */
 }
 
 .nav-link-container {
-    width: 100%;
-    height: 40px;
     display: flex;
     justify-content: flex-end;
     align-items: stretch;
+    width: 100%;
+    height: 40px;
     background-color: #16232d;
 }
 
 .nav-link {
-    text-decoration: none;
-    color: white;
     display: flex;
     align-items: center;
+    color: white;
+    text-decoration: none;
     padding: 0 20px;
     transition: all 0.2s;
 }
@@ -77,15 +75,17 @@ main {
 
 /* --- WELCOME SECTION STYLES --- */
 .welcome-section {
-    height: 100vh;
-    margin-top: 60px;
-    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 100vh;
+    padding: 25px;
+    margin-top: 60px;
 }
 
 .welcome-text {
+    font-family: 'Macondo Swash Caps', cursive;
+    color: white;
     width: 100%;
     max-width: 507px;
     text-align: center;
@@ -94,30 +94,25 @@ main {
 }
 
 .welcome-name {
-    color: white;
     font-size: 20px;
-    font-family: 'Macondo Swash Caps', cursive;
 }
 
 .welcome-heading {
-    color: white;
     font-size: 30px;
-    letter-spacing: 4px;
     font-weight: 400;
-    font-family: 'Macondo Swash Caps', cursive;
+    letter-spacing: 4px;
 }
 
 /* --- PROJECTS SECTION STYLES --- */
 .projects-section {
     color: white;
+    letter-spacing: 2px;
+    text-align: center;
     width: 100%;
     max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 15px;
-    text-align: center;
-    letter-spacing: 2px;
     border: 1px solid transparent;
-    /* background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0)); */
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .projects-heading {
@@ -132,23 +127,21 @@ main {
 .project-tile {
     width: 345px;
     height: auto;
-    /* border: 1px solid red; */
     background-color: #16232db4;
+    border: 2px solid transparent;
     margin: 0 auto 60px auto;
     overflow: hidden;
-    border: 2px solid transparent;
     transition: all 0.2s;
 }
 
 .project-tile:hover {
-    border: 2px solid #fecc33;
     background-color: #fecb3344;
+    border: 2px solid #fecc33;
 }
 
 .project-tile-img {
     width: auto;
     height: 350px;
-    /* margin-top: 10px; */
 }
 
 .project-tile-cap {
@@ -163,13 +156,13 @@ main {
 
 .work-link {
     display: block;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
+    max-width: 345px;
     background-color: #48b089;
     border-radius: 7px;
     padding: 8px 15px;
     margin: 0 auto 180px auto;
-    max-width: 345px;
     transition: all 0.2s;
 }
 
@@ -179,33 +172,49 @@ main {
 
 /* --- CONTACT SECTION STYLES --- */
 .contact-section {
+    font-size: 18px;
     color: white;
+    text-align: center;
     width: 100%;
     max-width: 1400px;
-    margin: 0 auto;
     height: 300px;
     padding: 0 15px;
-    text-align: center;
-    /* background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0)); */
+    margin: 0 auto;
 }
 
-.contact-icon {
-    width: 50px;
-    margin-top: 60px;
-    margin-right: 20px;
-    /* background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0)); */
-}
-
-
-/* --- FOOTER STYLES --- */
-footer {
-    width: 100%;
-    height: 100px;
-    background-color: #16232d;
-    color: white;
+.contact-link-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 253px;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+.contact-icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* --- FOOTER STYLES --- */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    color: white;
+    background-color: #16232d;
     padding: 15px;
 }
 
